@@ -1,0 +1,9 @@
+# Private per-book notes: write your own, keep them local
+knowledge/books/*
+!knowledge/books/README.md
+
+# Real client or campaign material
+results-log*.csv
+!templates/results-log.csv
+client-*/
+*.env
