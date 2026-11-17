@@ -236,7 +236,7 @@ Tried it? Tell me what worked, what sounded like fluff, and what it got wrong: o
 
 ## Work with me
 
-I help marketers and businesses put Claude skills and workflows to work: setting them up around your own brand voice, customer language and proof, and training your team to use them. If you want a Claude-driven marketing consultation, email **mikhail@arpidy.com**.
+I help marketers and businesses put Claude skills and workflows to work: setting them up around your own brand voice, customer language and proof, and training your team to use them. If you want a Claude-driven marketing consultation, message me on [LinkedIn](https://www.linkedin.com/in/mikhail-kho/).
 
 Mikhail Kho, Marketing Manager
 

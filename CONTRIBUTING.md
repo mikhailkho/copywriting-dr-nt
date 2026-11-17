@@ -98,7 +98,7 @@ By contributing, you agree that your contribution is released under the project'
 
 ## Behaviour
 
-Be respectful. Disagree with ideas, not people. No harassment, no spam or self-promotion dressed as a contribution. Links to your own work are fine when they're a source for a claim. To report a problem, email mikhail@arpidy.com.
+Be respectful. Disagree with ideas, not people. No harassment, no spam or self-promotion dressed as a contribution. Links to your own work are fine when they're a source for a claim. To report a problem, message me on [LinkedIn](https://www.linkedin.com/in/mikhail-kho/).
 
 ## Maintainer
 
