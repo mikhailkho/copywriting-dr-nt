@@ -2,92 +2,112 @@
 <html lang="en"><head><meta charset="utf-8">
 <title>copywriting-dr-nt banner</title>
 <!-- Source for assets/banner-*.png and assets/social-preview.png. Render with headless Chrome: see assets/README.md -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@1,500&display=swap">
 <style>
 :root{
-  --bg:#F3F6F4;--panel:#FFFFFF;--fg:#14201C;--muted:#4B5A54;--line:#D2DBD6;--accent:#0B6B5A;--accent-fg:#FFFFFF;
-  --unk-bg:#FBEBCB;--unk-fg:#7A4207;--code-bg:#E8EEEB;--hl-bg:#CDEBE1;--hl-fg:#08382D;--on-solid:#FFFFFF;
-  --blue:#1D5FA8;--rose:#B02A63;--teal:#0B6B5A;--violet:#6A45C2;
+  --bg:#F3F6F4;--panel:#FFFFFF;--fg:#14201C;--muted:#4B5A54;--line:#D2DBD6;--accent:#0B6B5A;
+  --unk-bg:#FBEBCB;--unk-fg:#7A4207;--on-solid:#FFFFFF;--shadow:rgba(8,40,32,.28);
+  --blue:#1D5FA8;--blue-bg:#E4EEFA;--blue-fg:#0F3E73;
+  --rose:#B02A63;--rose-bg:#FBE6EE;--rose-fg:#7A1740;
+  --teal:#0B6B5A;--teal-bg:#DDF1EA;--teal-fg:#08463B;
+  --violet:#6A45C2;--violet-bg:#ECE6FA;--violet-fg:#3F2580;
+  --orange:#B4531A;--orange-bg:#FBE9DD;--orange-fg:#7A3410;
+  --dots:#CBD6D0;
   --f-display:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
   --f-body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --f-serif:"IBM Plex Serif",Georgia,serif;
 }
 html[data-theme=dark]{
-  --bg:#0F1513;--panel:#16201C;--fg:#E6ECE9;--muted:#9DACA5;--line:#28352F;--accent:#3DBE9C;--accent-fg:#06241C;
-  --unk-bg:#3A2B10;--unk-fg:#F2B25C;--code-bg:#1B2823;--hl-bg:#1F4D40;--hl-fg:#BDF2DF;--on-solid:#0F1513;
-  --blue:#6AA9F0;--rose:#F08AB4;--teal:#3DBE9C;--violet:#A98BF0;
+  --bg:#0F1513;--panel:#16201C;--fg:#E6ECE9;--muted:#9DACA5;--line:#28352F;--accent:#3DBE9C;
+  --unk-bg:#3A2B10;--unk-fg:#F2B25C;--on-solid:#0F1513;--shadow:rgba(0,0,0,.6);
+  --blue:#6AA9F0;--blue-bg:#14263B;--blue-fg:#BBD7F8;
+  --rose:#F08AB4;--rose-bg:#3A1626;--rose-fg:#F9C6DA;
+  --teal:#3DBE9C;--teal-bg:#12302A;--teal-fg:#BDF2DF;
+  --violet:#A98BF0;--violet-bg:#261C45;--violet-fg:#D9CCFA;
+  --orange:#F4A272;--orange-bg:#3A2316;--orange-fg:#FAD3BC;
+  --dots:#233029;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
 body{width:1280px;height:var(--h,520px);background:var(--bg);color:var(--fg);font-family:var(--f-body);overflow:hidden;position:relative}
-body::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:40px 40px;opacity:.28;mask-image:radial-gradient(ellipse at 80% 40%,#000 0,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 80% 40%,#000 0,transparent 70%)}
-.frame{position:absolute;inset:0;padding:0 64px;display:flex;flex-direction:column}
-.top{display:flex;justify-content:space-between;align-items:center;height:62px;border-bottom:1px solid var(--line);font:500 15px var(--f-mono)}
-.top .meta{color:var(--muted);font-weight:400}
-.main{flex:1;display:grid;grid-template-columns:680px 1fr;gap:44px;align-items:center;padding:20px 0}
-.flag{font:400 13px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
-h1{font:700 54px/1.06 var(--f-display);letter-spacing:-.015em;margin:0 0 16px}
-.lede{font-size:18px;line-height:1.5;margin:0 0 20px;max-width:33em}
-.hl{background:var(--hl-bg);color:var(--hl-fg);padding:0 .28em;border-radius:3px;font-weight:600}
-.pills{display:flex;gap:8px;margin:0;padding:0;list-style:none}
-.chip{background:var(--cs);color:var(--on-solid);font:500 13px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:4px 12px;border-radius:999px;display:inline-block}
-.blue{--cs:var(--blue)}.rose{--cs:var(--rose)}.teal{--cs:var(--teal)}.violet{--cs:var(--violet)}
-.term{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 40px -24px rgba(8,40,32,.45);overflow:hidden}
-html[data-theme=dark] .term{box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
-.term-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--code-bg);font:400 12px var(--f-mono);color:var(--muted)}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--line)}
-.term-body{padding:14px 16px 16px;font:400 13.5px/1.55 var(--f-mono)}
-.cmd{display:block;background:var(--code-bg);border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin-bottom:14px}
-.cmd b{color:var(--accent);font-weight:600}
-.row{display:flex;gap:10px;white-space:nowrap}
-.k{color:var(--muted);flex:none;width:128px;font-size:11.5px;letter-spacing:.03em;padding-top:1px}
-.v{min-width:0}
-.unk{background:var(--unk-bg);color:var(--unk-fg);padding:0 .35em;border-radius:3px;font-weight:600}
-.note{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);color:var(--muted);font-size:12.5px;font-family:var(--f-body)}
-.steps{display:flex;align-items:center;gap:7px;height:62px;border-top:1px solid var(--line);font:500 13px var(--f-mono);color:var(--muted);letter-spacing:.02em}
-.steps .n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--cs);color:var(--on-solid);font-size:12px;font-weight:600}
-.steps .s{display:flex;align-items:center;gap:7px;color:var(--fg)}
-.steps .a{color:var(--muted);opacity:.5;margin:0 3px}
-.steps .end{margin-left:auto;color:var(--muted)}
+/* dot-grid texture, like a copywriter's notepad */
+body::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--dots) 1.6px,transparent 1.7px);background-size:26px 26px;opacity:.9;-webkit-mask-image:radial-gradient(ellipse at 78% 50%,#000 0,transparent 62%);mask-image:radial-gradient(ellipse at 78% 50%,#000 0,transparent 62%)}
+.abs{position:absolute}
+
+/* ---------- left: headline ---------- */
+.left{position:absolute;left:72px;top:0;bottom:0;width:730px;display:flex;flex-direction:column;justify-content:center}
+.flag{font:500 14px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.flag i{display:inline-block;width:28px;height:2px;background:var(--accent)}
+h1{font:700 74px/1.02 var(--f-display);letter-spacing:-.025em;margin:0;white-space:nowrap}
+h1 .dot{display:inline-block;width:.15em;height:.15em;border-radius:50%;margin-left:.04em;vertical-align:baseline}
+.circ{position:relative;display:inline-block;white-space:nowrap}
+.circ svg{position:absolute;left:-16px;top:-14px;width:calc(100% + 32px);height:calc(100% + 30px);overflow:visible}
+.under{position:relative;display:inline-block}
+.under svg{position:absolute;left:-4px;bottom:-14px;width:calc(100% + 8px);height:18px;overflow:visible}
+.tag{margin-top:34px;display:inline-flex;align-items:center;gap:14px;align-self:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 22px 14px 16px;box-shadow:0 14px 28px -16px var(--shadow);font:500 20px var(--f-body)}
+.tag .cmd{font:600 15px var(--f-mono);background:var(--teal-bg);color:var(--teal-fg);padding:5px 10px;border-radius:7px;white-space:nowrap}
+.tag em{font:italic 500 20px var(--f-serif);color:var(--orange)}
+.chips{display:flex;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chip{background:var(--cs);color:var(--on-solid);font:500 13px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+.blue{--cs:var(--blue)}.rose{--cs:var(--rose)}.teal{--cs:var(--teal)}.violet{--cs:var(--violet)}.orange{--cs:var(--orange)}
+
+/* ---------- right: scattered index cards ---------- */
+.art{position:absolute;right:40px;top:var(--dy,0px);height:520px;width:430px}
+.card{position:absolute;width:240px;border-radius:12px;padding:14px 16px 15px;border:1px solid var(--line);box-shadow:0 16px 30px -14px var(--shadow)}
+.card.blue{background:var(--blue-bg);--cf:var(--blue-fg)}.card.rose{background:var(--rose-bg);--cf:var(--rose-fg)}
+.card.teal{background:var(--teal-bg);--cf:var(--teal-fg)}.card.violet{background:var(--violet-bg);--cf:var(--violet-fg)}
+.card .hd{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.card .n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--cs);color:var(--on-solid);font:600 13px var(--f-mono)}
+.card h3{font:700 23px/1.05 var(--f-display);margin:0;color:var(--cf)}
+.card p{margin:0;font:400 14px/1.38 var(--f-body);color:var(--cf)}
+.card .ph{margin-left:auto;font:500 11px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;color:var(--cf);opacity:.8}
+.pin{position:absolute;top:-7px;left:50%;width:14px;height:14px;border-radius:50%;background:var(--cs);box-shadow:0 2px 0 rgba(0,0,0,.18);margin-left:-7px}
+.unk{position:absolute;background:var(--unk-bg);color:var(--unk-fg);border:2px dashed var(--unk-fg);border-radius:6px;padding:8px 14px;font:600 16px/1.25 var(--f-mono);letter-spacing:.03em;box-shadow:0 12px 24px -14px var(--shadow)}
+.unk small{display:block;font:500 12px var(--f-mono);opacity:.9;letter-spacing:.02em}
+.stamp{position:absolute;width:112px;height:112px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;text-align:center;font:600 13px/1.25 var(--f-mono);letter-spacing:.05em;text-transform:uppercase;transform:rotate(12deg);box-shadow:0 12px 24px -12px var(--shadow)}
+.stamp::after{content:"";position:absolute;inset:6px;border:1.5px dashed var(--bg);border-radius:50%;opacity:.7}
+.stamp b{display:block;font:700 26px/1 var(--f-display);letter-spacing:0;margin-bottom:2px}
+svg.doodle{position:absolute;overflow:visible;margin-top:var(--dy,0px)}
 </style></head>
 <body>
-<div class="frame">
-  <div class="top"><span>copywriting-dr-nt</span><span class="meta">Claude skill · open source (MIT) · early</span></div>
-  <div class="main">
-    <div>
-      <p class="flag">For copywriters, marketers and agency owners who use Claude</p>
-      <h1>Diagnose your audience before Claude writes a word</h1>
-      <p class="lede"><span class="hl">copywriting-dr-nt</span> is a free, open-source Claude skill for neo-traditionalist direct-response copywriting. It shows its read of your market so you can overrule it.</p>
-      <ul class="pills"><li class="chip blue">Understand</li><li class="chip rose">Shape</li><li class="chip teal">Write</li><li class="chip violet">Prove &amp; learn</li></ul>
-    </div>
-    <div class="term">
-      <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:6px">claude code</span></div>
-      <div class="term-body">
-        <span class="cmd"><b>/copywriting-dr-nt</b> write a landing page for my bookkeeping app</span>
-        <div class="row"><span class="k">AUDIENCE</span><span class="v">café owners, DIY bookkeeping</span></div>
-        <div class="row"><span class="k">AWARENESS</span><span class="v">4, problem-aware</span></div>
-        <div class="row"><span class="k">SOPHISTICATION</span><span class="v"><span class="unk">UNKNOWN</span> need 5 competitor pages</span></div>
-        <div class="row"><span class="k">DOMINANT DESIRE</span><span class="v">get weekends back</span></div>
-        <div class="row"><span class="k">LEAD TYPE</span><span class="v">Problem-Solution</span></div>
-        <div class="note">Invented example. Overrule any line and it re-runs.</div>
-      </div>
-    </div>
-  </div>
-  <div class="steps">
-    <span class="s blue"><span class="n">1</span>Intake</span><span class="a">→</span>
-    <span class="s blue"><span class="n">2</span>Diagnose</span><span class="a">→</span>
-    <span class="s rose"><span class="n">3</span>Big Idea</span><span class="a">→</span>
-    <span class="s rose"><span class="n">4</span>Offer</span><span class="a">→</span>
-    <span class="s teal"><span class="n">5</span>Draft</span><span class="a">→</span>
-    <span class="s teal"><span class="n">6</span>Edit</span><span class="a">→</span>
-    <span class="s violet"><span class="n">7</span>Gate</span><span class="a">→</span>
-    <span class="s violet"><span class="n">8</span>Test</span>
-    <span class="end">never invents facts · ends in a test plan</span>
-  </div>
+
+<!-- doodles -->
+<svg class="doodle" style="left:690px;top:84px" width="34" height="34" viewBox="0 0 24 24"><path fill="var(--violet)" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+<svg class="doodle" style="left:734px;top:70px" width="15" height="15" viewBox="0 0 24 24"><path fill="var(--orange)" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+<svg class="doodle" style="left:722px;top:296px" width="26" height="40" viewBox="0 0 26 40" fill="none" stroke="var(--violet)" stroke-width="5" stroke-linecap="round"><path d="M5 5l6 12"/><path d="M21 22l-5 13"/></svg>
+<svg class="doodle" style="left:700px;top:430px" width="90" height="50" viewBox="0 0 110 34" fill="none" stroke="var(--orange)" stroke-width="5" stroke-linecap="round"><path d="M4 22C16 4 28 4 38 18S60 32 72 16 94 4 106 14"/></svg>
+
+<div class="left">
+  <p class="flag"><i></i>Claude skill · open source · MIT</p>
+  <h1>
+    Diagnose your <span class="circ">audience<svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" stroke="var(--rose)" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"><path vector-effect="non-scaling-stroke" d="M10 60C2 26 36 4 76 6C112 8 106 64 78 88C50 108 8 98 5 62C3 38 14 14 38 2"/></svg></span><span class="dot" style="background:var(--teal)"></span><br>
+    Then Claude <span class="under">writes<svg viewBox="0 0 100 18" preserveAspectRatio="none" fill="none" stroke="var(--violet)" stroke-width="6" stroke-linecap="round"><path vector-effect="non-scaling-stroke" d="M3 11C14 3 22 3 32 10S52 17 64 9 86 4 97 10"/></svg></span><span class="dot" style="background:var(--orange)"></span>
+  </h1>
+  <div class="tag"><span class="cmd">/copywriting-dr-nt</span><span>Marks what it doesn't know. <em>Ends in a test.</em></span></div>
+  <ul class="chips"><li class="chip blue">Understand</li><li class="chip rose">Shape</li><li class="chip teal">Write</li><li class="chip violet">Prove &amp; learn</li></ul>
 </div>
+
+<div class="art">
+  <div class="card blue" style="left:28px;top:26px;transform:rotate(-4deg)"><span class="pin" style="--cs:var(--blue)"></span>
+    <div class="hd"><span class="n" style="--cs:var(--blue)">2</span><h3>Diagnose</h3><span class="ph">Understand</span></div>
+    <p>Audience, stage, desire. Said out loud so you can overrule it.</p></div>
+  <div class="card rose" style="left:112px;top:136px;transform:rotate(3.5deg)"><span class="pin" style="--cs:var(--rose)"></span>
+    <div class="hd"><span class="n" style="--cs:var(--rose)">3</span><h3>Big Idea</h3><span class="ph">Shape</span></div>
+    <p>One promise, capped at the proof you hold.</p></div>
+  <div class="card teal" style="left:22px;top:236px;transform:rotate(-2.5deg)"><span class="pin" style="--cs:var(--teal)"></span>
+    <div class="hd"><span class="n" style="--cs:var(--teal)">6</span><h3>Edit</h3><span class="ph">Write</span></div>
+    <p>Ten passes against AI tells and buzzwords.</p></div>
+  <div class="card violet" style="left:104px;top:336px;transform:rotate(4.5deg)"><span class="pin" style="--cs:var(--violet)"></span>
+    <div class="hd"><span class="n" style="--cs:var(--violet)">8</span><h3>Test</h3><span class="ph">Learn</span></div>
+    <p>One variable, one metric. The market picks.</p></div>
+  <div class="unk" style="left:10px;top:438px;transform:rotate(-4deg)">UNKNOWN<small>[NEED: 10 customer quotes]</small></div>
+  <div class="stamp" style="right:-4px;top:6px"><div><b>FREE</b>8 steps<br>no hype</div></div>
+</div>
+
 <script>
 const q=new URLSearchParams(location.search);
 document.documentElement.dataset.theme=q.get('theme')||'light';
-if(q.get('h'))document.body.style.setProperty('--h',q.get('h')+'px');
+if(q.get('h')){document.body.style.setProperty('--h',q.get('h')+'px');document.documentElement.style.setProperty('--dy',((q.get('h')-520)/2)+'px');}
 </script>
 </body></html>
