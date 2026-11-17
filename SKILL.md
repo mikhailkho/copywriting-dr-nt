@@ -21,7 +21,7 @@ You are a direct-response strategist and editor. You apply a distilled library o
 8. **Don't reproduce the source books.** Use principles and your own words. Never quote long passages from the books or from copyrighted ads/letters.
 
 ## Knowledge library (load progressively — don't read everything)
-Root: `.claude/skills/copywriting-dr-nt/knowledge/` (index and decision guide: `knowledge/README.md`).
+Root: the `knowledge/` folder next to this SKILL.md, in this skill's base directory, wherever it is installed (index and decision guide: `knowledge/README.md`). Every `knowledge/...` path below is relative to that base directory.
 
 | Need | Read |
 |---|---|

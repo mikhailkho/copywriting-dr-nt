@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "copywriting-dr-nt",
+  "owner": {
+    "name": "mikhailkho",
+    "url": "https://github.com/mikhailkho"
+  },
+  "description": "The copywriting-dr-nt skill, installable as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "copywriting-dr-nt",
+      "source": "./",
+      "description": "Neo-traditionalist direct-response copywriting for the AI era. Diagnoses your audience before it drafts, marks missing facts as UNKNOWN instead of inventing them, keeps a claims register, and ends every job with a test plan.",
+      "license": "MIT",
+      "keywords": ["copywriting", "direct-response", "marketing", "headlines", "landing-pages", "email", "ads", "offers", "ab-testing", "claude-skill"]
+    }
+  ]
+}

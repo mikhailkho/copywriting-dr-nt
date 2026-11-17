@@ -6,7 +6,7 @@ Header images for the repo README and the GitHub social preview.
 |---|---|
 | `banner-light.png`, `banner-dark.png` | README header, 2560x1040. Swapped by `<picture>` to match the reader's theme. |
 | `social-preview.png` | GitHub social preview, 1280x640. Upload under Settings > General > Social preview. |
-| `banner.html` | Source for all three. Styles copied from https://copywriting-dr-nt.vercel.app/ (IBM Plex fonts, same colour tokens). |
+| `banner.html` | Source for all three. Uses IBM Plex fonts and the project's colour tokens. |
 
 ## Re-render
 

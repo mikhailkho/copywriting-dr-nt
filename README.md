@@ -1,10 +1,8 @@
 <p align="center">
-  <a href="https://copywriting-dr-nt.vercel.app/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-      <img src="assets/banner-light.png" alt="copywriting-dr-nt: diagnose your audience before Claude writes a word. A free, open-source Claude skill for neo-traditionalist direct-response copywriting." width="100%">
-    </picture>
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+    <img src="assets/banner-light.png" alt="copywriting-dr-nt: diagnose your audience before Claude writes a word. A free, open-source Claude skill for neo-traditionalist direct-response copywriting." width="100%">
+  </picture>
 </p>
 
 <p align="center">
@@ -16,9 +14,9 @@
 
 <p align="center">
   <a href="#try-it"><b>Install</b></a> ·
+  <a href="#same-brief-with-and-without-the-skill"><b>Before / after</b></a> ·
   <a href="#how-it-works"><b>How it works</b></a> ·
   <a href="#example-prompts-and-use-cases"><b>Example prompts</b></a> ·
-  <a href="https://copywriting-dr-nt.vercel.app/"><b>Landing page</b></a> ·
   <a href="https://github.com/mikhailkho/copywriting-dr-nt">⭐ <b>Star this repo</b></a>
 </p>
 
@@ -39,27 +37,63 @@ It applies classic direct-response method (research first, awareness x sophistic
 
 Built and tested for **Claude Code**. Other Claude surfaces are untested.
 
-Install in one project:
+**Install, one line, inside Claude Code:**
+
+```
+/plugin install copywriting-dr-nt --marketplace mikhailkho/copywriting-dr-nt
+```
+
+Then run it:
+
+```
+/copywriting-dr-nt:copywriting-dr-nt write a cold email to [audience] for [offer]
+/copywriting-dr-nt:copywriting-dr-nt review this landing page: <paste or path>
+/copywriting-dr-nt:copywriting-dr-nt give me 30 subject lines for a win-back email
+```
+
+<details>
+<summary>Other ways to install (shorter command, no plugin)</summary>
+
+Clone it as a plain skill and the command is just `/copywriting-dr-nt`. For all your projects:
+
+```
+git clone https://github.com/mikhailkho/copywriting-dr-nt ~/.claude/skills/copywriting-dr-nt
+```
+
+Or for one project:
 
 ```
 git clone https://github.com/mikhailkho/copywriting-dr-nt .claude/skills/copywriting-dr-nt
 ```
 
-Or for all your projects, clone into `~/.claude/skills/copywriting-dr-nt`.
+If the one-line plugin command isn't recognised, your Claude Code is probably older than 2.1.275. Run `/plugin marketplace add mikhailkho/copywriting-dr-nt`, then `/plugin install copywriting-dr-nt@copywriting-dr-nt`.
 
-The folder name matters: `SKILL.md` refers to `.claude/skills/copywriting-dr-nt/knowledge/`.
-
-Then run it:
-
-```
-/copywriting-dr-nt write a cold email to [audience] for [offer]
-/copywriting-dr-nt review this landing page: <paste or path>
-/copywriting-dr-nt give me 30 subject lines for a win-back email
-```
+</details>
 
 Argument hint: `[what to write or review] [audience/offer/channel if known]`.
 
 Give it real facts: your offer, customer quotes and proof. Where you have none, it leaves `UNKNOWN` or a `[NEED: …]` bracket instead of guessing. Please don't paste confidential or personal customer data into any AI tool without authorisation.
+
+## Same brief, with and without the skill
+
+One real run of each, in Claude Code. Ledgerbean is an invented product. Full, unedited outputs are in [examples/ledgerbean-before-after.md](examples/ledgerbean-before-after.md).
+
+> **The brief (identical for both):** Write the top of a landing page for Ledgerbean, a bookkeeping app for small independent cafes. Facts: it connects to Square and Stripe and sorts each transaction into a category automatically; $29 a month; 14-day free trial; the owners have no accounting background and do their own books on Sunday nights. No customer quotes, results or case studies yet.
+
+| Plain Claude | With `/copywriting-dr-nt` |
+|---|---|
+| **Headline:** Your Sunday-night books, done before you sit down. | **Headline:** Your cafe's books, sorted before Sunday night. |
+| **Subhead:** Ledgerbean connects to Square and Stripe and sorts every transaction into the right category automatically. No accounting degree required. | **Subhead:** Ledgerbean connects to Square and Stripe and puts every transaction in a category for you. Made for cafe owners who never studied accounting. |
+| **Button:** Start your 14-day free trial | **Button:** Start my 14-day free trial, with the line under it: "$29/month after the trial. `[NEED: is a card required to start? how do you cancel?]`" |
+| Short notes on its choices. | A diagnosis to overrule, 3 headline alternatives built on different ideas, a claims register, assumptions, 3 things to verify and one next test. |
+
+**What to take from it, honestly:**
+
+- Neither draft invented proof. Made-up claims like "saves hours a week" are a common failure in AI copy, and plain Claude avoided them here.
+- The copy itself is close. You may prefer the plain version.
+- The difference is the work around the copy. The skill flags that "sorted before Sunday night" depends on *when* the sorting happens, marks the card and cancellation terms as `[NEED: …]` instead of guessing, and ends with a test: headline as the one variable, trial starts per visitor as the metric, about 100 trial starts per version before calling a winner.
+- It costs a longer reply. For a one-off line, plain Claude is faster.
+- This is one brief and one run each. It is not a benchmark. If you try your own, I'd like to hear it (see "Feedback").
 
 ## What it does
 
@@ -171,6 +205,9 @@ SKILL.md                      skill definition and workflow (what Claude loads)
 LICENSE                       MIT
 CONTRIBUTING.md               how to contribute
 .github/                      issue and pull request templates
+.claude-plugin/               plugin and marketplace manifests (one-line install)
+assets/                       README banner and social preview, with the HTML they are rendered from
+examples/                     real before/after run: same brief with and without the skill
 knowledge/
   README.md                   index and decision guide for the library
   00-neo-traditionalist-canon.md
