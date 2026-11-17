@@ -139,21 +139,21 @@ Note the `UNKNOWN`. The skill is built to say what it doesn't know rather than f
 
 ## Example prompts and use cases
 
-Replace the bracketed parts with your own facts. The more real detail you give, the less the skill has to mark as unknown.
+These are examples only, not scripts. Start your message with `/copywriting-dr-nt` (or `/copywriting-dr-nt:copywriting-dr-nt` if you installed it as a plugin), then type what you want written or reviewed. Replace the [brackets] with your own details, or write your own request. The more real detail you give, the less the skill has to mark as unknown.
 
 | Use case | Example prompt | What you get |
 |---|---|---|
-| Write a landing page | `/copywriting-dr-nt write a landing page for [product]. Audience: [who]. Offer: [price, guarantee]. Customer quotes: [paste].` | Diagnosis, Big Idea Card, page copy, headline variants, claims register, test plan |
-| Review copy that isn't converting | `/copywriting-dr-nt review this sales page: [paste]. Traffic comes from [source].` | Scored checklist, fixes ranked by leverage, rewrites of the weakest sections |
-| Rewrite in your own voice | `/copywriting-dr-nt rewrite this email in direct-response style but keep my voice: [paste]` | Before/after on the biggest changes, with the reason for each |
-| Headlines and subject lines | `/copywriting-dr-nt give me 30 subject lines for a win-back email to customers who haven't bought in 6 months. Offer: [offer].` | Variants across different lead types, scored on the 4 U's, a shortlist of 3–5 |
-| Find an angle | `/copywriting-dr-nt what angle should I use for [product] when every competitor says "faster and cheaper"? Competitors: [links]` | 3–5 candidate Big Ideas, each with the mechanism and proof it needs |
-| Cold B2B outreach | `/copywriting-dr-nt write a cold email to [role] at [company type]. I have no case studies yet.` | A plain draft that admits the proof gap, says what you do and don't do, and keeps the opt-out line |
-| Paid social hooks | `/copywriting-dr-nt write 10 Meta ad hooks for [offer], cold audience, [country].` | Hooks matched to awareness stage, with platform-policy flags |
-| Email sequence | `/copywriting-dr-nt plan a 5-email welcome sequence for people who downloaded [lead magnet].` | Arc, angle and call to action per email, metrics to track |
-| Plan a test | `/copywriting-dr-nt we ran two headline tests: [results]. What do we do next?` | Interpretation, a warning if the sample is too small, a log entry, the next test |
-| Traffic and lead magnets | `/copywriting-dr-nt help me plan where to find buyers for [offer], and a lead magnet.` | Dream 100 worksheet, earn/buy/own plan, lead magnet options |
-| Ask the library | `/copywriting-dr-nt what did Schwartz say about sophistication stages, and does it still hold?` | A short answer with provenance, and a note on what is durable and what is dated |
+| Write a landing page | `write a landing page for [product]. Audience: [who]. Offer: [price, guarantee]. Customer quotes: [paste].` | Diagnosis, Big Idea Card, page copy, headline variants, claims register, test plan |
+| Review copy that isn't converting | `review this sales page: [paste]. Traffic comes from [source].` | Scored checklist, fixes ranked by leverage, rewrites of the weakest sections |
+| Rewrite in your own voice | `rewrite this email in direct-response style but keep my voice: [paste]` | Before/after on the biggest changes, with the reason for each |
+| Headlines and subject lines | `give me 30 subject lines for a win-back email to customers who haven't bought in 6 months. Offer: [offer].` | Variants across different lead types, scored on the 4 U's, a shortlist of 3–5 |
+| Find an angle | `what angle should I use for [product] when every competitor says "faster and cheaper"? Competitors: [links]` | 3–5 candidate Big Ideas, each with the mechanism and proof it needs |
+| Cold B2B outreach | `write a cold email to [role] at [company type]. I have no case studies yet.` | A plain draft that admits the proof gap, says what you do and don't do, and keeps the opt-out line |
+| Paid social hooks | `write 10 Meta ad hooks for [offer], cold audience, [country].` | Hooks matched to awareness stage, with platform-policy flags |
+| Email sequence | `plan a 5-email welcome sequence for people who downloaded [lead magnet].` | Arc, angle and call to action per email, metrics to track |
+| Plan a test | `we ran two headline tests: [results]. What do we do next?` | Interpretation, a warning if the sample is too small, a log entry, the next test |
+| Traffic and lead magnets | `help me plan where to find buyers for [offer], and a lead magnet.` | Dream 100 worksheet, earn/buy/own plan, lead magnet options |
+| Ask the library | `what did Schwartz say about sophistication stages, and does it still hold?` | A short answer with provenance, and a note on what is durable and what is dated |
 
 ### Who it suits
 
