@@ -24,7 +24,7 @@
 
 A Claude skill for **neo-traditionalist direct-response copywriting in the AI era**. It makes Claude diagnose your audience before it writes, tells you its diagnosis so you can overrule it, marks the facts it doesn't have instead of inventing them, and ends every job with a test plan.
 
-It applies classic direct-response method (research first, awareness x sophistication, one Big Idea, mechanism, specificity, offer, testing) and uses AI to amplify human truth, not replace it.
+It applies the classic direct-response method (research first, awareness × sophistication, one Big Idea, mechanism, specificity, offer, testing) as taught by Hopkins, Caples, Halbert, Schwartz, Whitman, Masterson and Forde, Kennedy, Bly, Todd Brown and Brunson, and uses AI to amplify human truth, not replace it. [Influences only; see Sources and attribution.](#sources-and-attribution)
 
 ## Status: early
 
