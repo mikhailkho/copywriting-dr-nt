@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>copywriting-dr-nt banner</title>
+<!-- Source for assets/banner-*.png and assets/social-preview.png. Render with headless Chrome: see assets/README.md -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F6F4;--panel:#FFFFFF;--fg:#14201C;--muted:#4B5A54;--line:#D2DBD6;--accent:#0B6B5A;--accent-fg:#FFFFFF;
+  --unk-bg:#FBEBCB;--unk-fg:#7A4207;--code-bg:#E8EEEB;--hl-bg:#CDEBE1;--hl-fg:#08382D;--on-solid:#FFFFFF;
+  --blue:#1D5FA8;--rose:#B02A63;--teal:#0B6B5A;--violet:#6A45C2;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+html[data-theme=dark]{
+  --bg:#0F1513;--panel:#16201C;--fg:#E6ECE9;--muted:#9DACA5;--line:#28352F;--accent:#3DBE9C;--accent-fg:#06241C;
+  --unk-bg:#3A2B10;--unk-fg:#F2B25C;--code-bg:#1B2823;--hl-bg:#1F4D40;--hl-fg:#BDF2DF;--on-solid:#0F1513;
+  --blue:#6AA9F0;--rose:#F08AB4;--teal:#3DBE9C;--violet:#A98BF0;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{width:1280px;height:var(--h,520px);background:var(--bg);color:var(--fg);font-family:var(--f-body);overflow:hidden;position:relative}
+body::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:40px 40px;opacity:.28;mask-image:radial-gradient(ellipse at 80% 40%,#000 0,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 80% 40%,#000 0,transparent 70%)}
+.frame{position:absolute;inset:0;padding:0 64px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center;height:62px;border-bottom:1px solid var(--line);font:500 15px var(--f-mono)}
+.top .meta{color:var(--muted);font-weight:400}
+.main{flex:1;display:grid;grid-template-columns:680px 1fr;gap:44px;align-items:center;padding:20px 0}
+.flag{font:400 13px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+h1{font:700 54px/1.06 var(--f-display);letter-spacing:-.015em;margin:0 0 16px}
+.lede{font-size:18px;line-height:1.5;margin:0 0 20px;max-width:33em}
+.hl{background:var(--hl-bg);color:var(--hl-fg);padding:0 .28em;border-radius:3px;font-weight:600}
+.pills{display:flex;gap:8px;margin:0;padding:0;list-style:none}
+.chip{background:var(--cs);color:var(--on-solid);font:500 13px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:4px 12px;border-radius:999px;display:inline-block}
+.blue{--cs:var(--blue)}.rose{--cs:var(--rose)}.teal{--cs:var(--teal)}.violet{--cs:var(--violet)}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 40px -24px rgba(8,40,32,.45);overflow:hidden}
+html[data-theme=dark] .term{box-shadow:0 18px 40px -20px rgba(0,0,0,.7)}
+.term-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--code-bg);font:400 12px var(--f-mono);color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.term-body{padding:14px 16px 16px;font:400 13.5px/1.55 var(--f-mono)}
+.cmd{display:block;background:var(--code-bg);border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin-bottom:14px}
+.cmd b{color:var(--accent);font-weight:600}
+.row{display:flex;gap:10px;white-space:nowrap}
+.k{color:var(--muted);flex:none;width:128px;font-size:11.5px;letter-spacing:.03em;padding-top:1px}
+.v{min-width:0}
+.unk{background:var(--unk-bg);color:var(--unk-fg);padding:0 .35em;border-radius:3px;font-weight:600}
+.note{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);color:var(--muted);font-size:12.5px;font-family:var(--f-body)}
+.steps{display:flex;align-items:center;gap:7px;height:62px;border-top:1px solid var(--line);font:500 13px var(--f-mono);color:var(--muted);letter-spacing:.02em}
+.steps .n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--cs);color:var(--on-solid);font-size:12px;font-weight:600}
+.steps .s{display:flex;align-items:center;gap:7px;color:var(--fg)}
+.steps .a{color:var(--muted);opacity:.5;margin:0 3px}
+.steps .end{margin-left:auto;color:var(--muted)}
+</style></head>
+<body>
+<div class="frame">
+  <div class="top"><span>copywriting-dr-nt</span><span class="meta">Claude skill · open source (MIT) · early</span></div>
+  <div class="main">
+    <div>
+      <p class="flag">For copywriters, marketers and agency owners who use Claude</p>
+      <h1>Diagnose your audience before Claude writes a word</h1>
+      <p class="lede"><span class="hl">copywriting-dr-nt</span> is a free, open-source Claude skill for neo-traditionalist direct-response copywriting. It shows its read of your market so you can overrule it.</p>
+      <ul class="pills"><li class="chip blue">Understand</li><li class="chip rose">Shape</li><li class="chip teal">Write</li><li class="chip violet">Prove &amp; learn</li></ul>
+    </div>
+    <div class="term">
+      <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:6px">claude code</span></div>
+      <div class="term-body">
+        <span class="cmd"><b>/copywriting-dr-nt</b> write a landing page for my bookkeeping app</span>
+        <div class="row"><span class="k">AUDIENCE</span><span class="v">café owners, DIY bookkeeping</span></div>
+        <div class="row"><span class="k">AWARENESS</span><span class="v">4, problem-aware</span></div>
+        <div class="row"><span class="k">SOPHISTICATION</span><span class="v"><span class="unk">UNKNOWN</span> need 5 competitor pages</span></div>
+        <div class="row"><span class="k">DOMINANT DESIRE</span><span class="v">get weekends back</span></div>
+        <div class="row"><span class="k">LEAD TYPE</span><span class="v">Problem-Solution</span></div>
+        <div class="note">Invented example. Overrule any line and it re-runs.</div>
+      </div>
+    </div>
+  </div>
+  <div class="steps">
+    <span class="s blue"><span class="n">1</span>Intake</span><span class="a">→</span>
+    <span class="s blue"><span class="n">2</span>Diagnose</span><span class="a">→</span>
+    <span class="s rose"><span class="n">3</span>Big Idea</span><span class="a">→</span>
+    <span class="s rose"><span class="n">4</span>Offer</span><span class="a">→</span>
+    <span class="s teal"><span class="n">5</span>Draft</span><span class="a">→</span>
+    <span class="s teal"><span class="n">6</span>Edit</span><span class="a">→</span>
+    <span class="s violet"><span class="n">7</span>Gate</span><span class="a">→</span>
+    <span class="s violet"><span class="n">8</span>Test</span>
+    <span class="end">never invents facts · ends in a test plan</span>
+  </div>
+</div>
+<script>
+const q=new URLSearchParams(location.search);
+document.documentElement.dataset.theme=q.get('theme')||'light';
+if(q.get('h'))document.body.style.setProperty('--h',q.get('h')+'px');
+</script>
+</body></html>

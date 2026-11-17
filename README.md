@@ -1,3 +1,27 @@
+<p align="center">
+  <a href="https://copywriting-dr-nt.vercel.app/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+      <img src="assets/banner-light.png" alt="copywriting-dr-nt: diagnose your audience before Claude writes a word. A free, open-source Claude skill for neo-traditionalist direct-response copywriting." width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/mikhailkho/copywriting-dr-nt/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/mikhailkho/copywriting-dr-nt?style=flat&logo=github&color=0B6B5A&labelColor=14201C"></a>
+  <a href="LICENSE"><img alt="MIT licence" src="https://img.shields.io/badge/licence-MIT-0B6B5A?style=flat&labelColor=14201C"></a>
+  <img alt="Claude Code skill" src="https://img.shields.io/badge/Claude_Code-skill-6A45C2?style=flat&labelColor=14201C">
+  <img alt="Status: early" src="https://img.shields.io/badge/status-early-B4531A?style=flat&labelColor=14201C">
+</p>
+
+<p align="center">
+  <a href="#try-it"><b>Install</b></a> ·
+  <a href="#how-it-works"><b>How it works</b></a> ·
+  <a href="#example-prompts-and-use-cases"><b>Example prompts</b></a> ·
+  <a href="https://copywriting-dr-nt.vercel.app/"><b>Landing page</b></a> ·
+  <a href="https://github.com/mikhailkho/copywriting-dr-nt">⭐ <b>Star this repo</b></a>
+</p>
+
 # copywriting-dr-nt
 
 A Claude skill for **neo-traditionalist direct-response copywriting in the AI era**. It makes Claude diagnose your audience before it writes, tells you its diagnosis so you can overrule it, marks the facts it doesn't have instead of inventing them, and ends every job with a test plan.
